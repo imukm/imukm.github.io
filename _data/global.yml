@@ -5,8 +5,8 @@ url: 'http://imukm.github.io' # the base hostname & protocol for your site
 nav: "true"
 footer_text: '© 2016 Intelligent Machines UKM'
 twitter: ''
-medium: 'https://medium.com/@imukm'
 github: 'imukm'
+medium: 'https://medium.com/@imukm'
 
 # Admin Settings
 admin_name: 'Intelligent Machines UKM'
