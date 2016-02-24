@@ -1,9 +1,9 @@
 # Site Settings
-title: "Welcome to Intelligent Machines UKM!"
+title: "Welcome to Intelligent Machines!"
 description: "Broaden your horizen, think like an AI scientist."
 url: 'http://imukm.github.io' # the base hostname & protocol for your site
 nav: "true"
-footer_text: '© 2016 Intelligent Machines UKM'
+footer_text: '© 2016 Intelligent Machines'
 twitter: ''
 github: 'imukm'
 medium: 'medium.com/@imukm'
