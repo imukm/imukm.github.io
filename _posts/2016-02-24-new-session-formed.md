@@ -2,7 +2,7 @@
 layout: default
 position: center
 title: 'New session, formed!'
-date: 2016-02-21 15:16:00
+date: 2016-02-24 15:16:00
 categories: news
 tags: Club Formation FTSM
 featured_image: ''
