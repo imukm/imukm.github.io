@@ -1,28 +1,29 @@
 ---
 authors:
 - Mohammed Omar
+- Hakim Zulkufli
 title: FTSM ROS Game
 ...
 
 Definition of the game:
 =======================
 
-ROS Robot challenge is a game measure your skills in using ROS, so the
-robot need to achieve maximum number of tasks in the minimum time. The
-robot should success in the take according to the instructions and rules
-of the game in this manual. The challenge is divided into two phases.
+ROS Robot Challenge is a game assess your skills and competency in using ROS. The
+robot need to achieve maximum number of tasks in the minimum amount of time.
+You will have to complete the challenges according to the instructions
+and rules as written in this manual. The challenge is divided into two phases.
 
-The first phase (Teleoperation)
+First Phase (Teleoperation)
 ===============================
 
-It is a qualification stage, the robot of each team will remote
-controlling using ROS teleoperation functions and success to reach three
-spots that been marked by the referees. The main rules for ROS
-teleoperation challenge are:
+This is the qualifications stage, the robot of each team will be remotely
+controlled using ROS teleoperation functions and must be able to successfully
+reach the three checkpoints that have been marked by the referees. The main rules
+for the ROS teleoperation challenge are:
 
--   Team have to use ROS functions only for remote operation the robot.
+-   Teams are only allowed to use ROS to control the robot remotely.
 
--   Team have to show evidence that they using ROS.
+-   Teams have to show evidence that they using ROS. (* do we need this? the first rule already mentioned the same thing. *)
 
 -   The team how to setup the wifi network and setup the teleoperation
     station.
