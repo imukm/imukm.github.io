@@ -1,0 +1,156 @@
+*************************************
+*  INTELLIGENT MACHINES WORKSHOP 3  *
+*************************************
+
+- Workshop by Dr. Azizi bin Abdullah.
+
+/**
+*
+* WHAT IS AUTONOMOUS NAVIGATION?
+*
+**/
+
+=> Autonomously navigating the robot
+   simply means that the robot moves
+   through the space on its own.
+
+=> However, the Turtlebot does not yet
+   supports navigating the space
+   without the help of a map of the
+   space.
+
+=> Therefore, in order to allow the
+   robot to navigate through the space
+   on its own, we will have to create
+   a map for the robot to navigate
+   through it.
+
+=> Mapping the course is a very
+   important step. You have to be very
+   cautious and make sure that everything
+   is mapped.
+
+/**
+*
+* MAPPING THE COURSE
+*
+**/
+
+1. Run the teleoperation program.
+
+=> Mapping the course is simply by
+   teleoperating the Turtlebot
+   through the course while running
+   the mapping launch.
+
+   Keyboard teleoperation:
+   | $ roslaunch turtlebot_teleop keyboard_teleop.launch
+
+
+   PS3 joystick teleoperation:
+   | $ roslaunch turtlebot_teleop ps3_teleop.launch
+
+   Xbox 360 joystick teleoperation:
+   | $ roslaunch turtlebot_teleop keyboard_teleop.launch
+
+2. Run the mapping program.
+
+=> To run the mapping launch, we use
+   the gmapping_demo from the
+   turtlebot_navigation package:
+
+   | $ roslaunch turtlebot_navigation gmapping_demo.launch
+
+=> To allow for remote teloperation
+   (without looking through course
+   and robot directly), we use rviz.
+   This also allows us to see the
+   map that we are creating.
+
+   | $ roslaunch turtlebot_rviz_launchers view_navigation.launch
+
+   Remember to enable the camera
+   if you want to look through the
+   space from the robot's POV.
+
+3. Saving the map.
+
+=> Once you are done, you can
+   save the map by using map_saver.
+
+   | $ rosrun map_server map_saver -f /home/turtlebot/mymap/map1
+  
+   DO NOT CLOSE THE GMAPPING LAUNCH
+   UNTIL YOU HAVE SAVED THE MAP!
+
+=> It is also recommended to save
+   the map inside an easily accessible
+   location (e.g. your home directory
+   or USB flash drive).
+
+=> Avoid saving it in a /temp or /tmp
+   folder as your map will be lost
+   after a reboot of the system.
+
+4. Once everything is done, close
+   everything, including the teleop
+   launch.
+
+/**
+*
+* AUTONOMOUSLY NAVIGATING THE ROBOT
+*
+**/
+
+1. Loading the map.
+
+=> Load your previously done
+   map by launching the amcl_demo
+   launch:
+
+   | $ roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/turtlebot/mymap/map1.yaml
+
+2. Using rviz viewer to autonomously
+   navigate the turtlebot.
+
+=> Launch rviz:
+   
+   | $ roslaunch turtlebot_rviz_launchers view_navigation.launch
+
+3. Tell your Turtlebot its current location.
+
+=> Set the current position of your
+   Turtlebot by clicking the
+   '2D POSE ESTIMATE' button on the
+   rviz viewer program.
+
+=> Click on the map at the location
+   where your Turtlebot is currently
+   physically located and point the
+   arrow to where the front of the
+   Turtlebot is facing.
+
+=> This is a very important step
+   in order to let your Turtlebot
+   know where it is currently located
+   in the map.
+
+4. Navigating the Turtlebot through the map.
+
+=> To tell your Turtlebot where it
+   should go to, click the '2D NAV GOAL'
+   button.
+
+=> Click on the map the destination
+   of your choice and point the arrow
+   to where you want the robot to face
+   to.
+
+=> If you want to stop the robot before
+   it reaches the destination, set
+   a new destination at its current
+   location.
+
+************************************
+*   HAPPY MAPPING AND GOOD LUCK!   *
+************************************

@@ -1,0 +1,13 @@
+++++++++++++++++++++++++++++
+++ READ THE GUIDE FIRST!! ++
+++++++++++++++++++++++++++++
+
+-- Use this list if you only
+-- want to know the commands
+-- once you've read the guide.
+
+1. roslaunch turtlebot_teleop keyboard_teleop.launch
+2. roslaunch turtlebot_navigation gmapping_demo.launch
+3. rosrun map_server map_saver -f /home/turtlebot/mymap/map1
+4. roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/turtlebot/mymap/map1.yaml
+5. roslaunch turtlebot_rviz_launchers view_navigation.launch
