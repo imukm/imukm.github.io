@@ -2,6 +2,7 @@
 authors:
 - Mohammed Omar
 - Hakim Zulkufli
+- Viven Raaj
 title: FTSM ROS Game
 ...
 
@@ -84,10 +85,10 @@ challenge are:
 -   If the robot stick and the teem need to restart the robot and
     retriever, the team can go and bring back the robot to the station.
 
--   The timer will not puss for any reasons including the time for
+-   The timer will not be paused for any reasons including the time for
     retriever the robot to station.
 
--   Each team will giving 30 minutes for mapping.
+-   Each team will be given 30 minutes for mapping.
 
 Scoring sheet
 -------------
