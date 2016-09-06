@@ -1,3 +1,3 @@
 ### Intelligent Machines UKM
 
-Website. All news can be read from here or our [https://medium.com/@imukm](Medium profile) (https://medium.com/@imukm).
+Website. All news can be read from here or our [Medium profile](https://medium.com/@imukm).
